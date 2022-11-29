@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="">
+
+        <!--La forma correcta de trabajar con Formularios es usando Label-->
+        
+        <label for="nombre">
+        
+            <!--Los span pueden ser usados para darle un titulo al Input-->
+            <span>¿Cual es tu nombre?</span>
+            
+        <!--
+            
+        El type es utilizado para especificar el tipo de input que es 
+        
+        El id es el elemento identificador, y debe ser igual al for del label>
+        
+        El placeholder es utilizado para dar ejemplos a los usuarios de lo que estamos solicitando
+    
+        -->
+            <input type="text" id="nombre" placeholder="Tu nombre"/>
+            
+        </label>
+
+        <label for="dia">
+            <span>¿Que día comenzaste en clases?</span>
+            <input type="date" id="dia"/>
+        </label>
+
+        <label for="hour">
+            <span>¿Cuantas horas estudias diariamente?</span>
+            <input type="time" id="hour"/>
+        </label>
+    </form>
+
+<p>Para más información: https://developer.mozilla.org/es/docs/Web/HTML/Element/input</p>
+</body>
+
+</html>

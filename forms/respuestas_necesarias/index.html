@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <label for="nombre">
+
+            <!--
+            autocomplete se utiliza para que el navegador ayude al usuario a llenar el formulario, utilizando información usada anteriormente
+            
+            required se utiliza para especificar que un campo del formulario es obligartorio
+            -->
+            <span>¿Cual es tu Nombre?</span>
+            <input type="text" name="nombre" id:"nombre" autocomplete="name" required/>
+
+        </label>
+
+        <label for="correo">
+
+            <span>¿Cual es tu correo?</span>
+            <input type="email" name="correo" id:"correo" autocomplete="email" required/>
+
+        </label>
+
+        <label for="code">
+
+            <span>Codigo Postal</span>
+            <input type="text" name="code" id:"code" autocomplete="postal-code" required/>
+
+        </label>
+
+        <!--
+        select se utiliza para darle al usuario varias opciones de respuesta a una pregunta
+        -->
+        <select name="pais" id="pais">
+
+            <option value="">Venezuela</option>
+            <option value="">Perú</option>
+            <option value="">Argentina</option>
+            <option value="">Colombia</option>
+            <option value="">Mexico</option>
+
+        </select>
+
+        <main>
+        <!--
+        input list - datalist, tambien se utiliza para darle al usuario varias opciones a una respuesta
+        -->
+        
+            <input list="continentes">
+                <datalist id="continentes">
+                    <option value="Asia"></option>
+                    <option value="Europa"></option>
+                    <option value="Oceanía"></option>
+                    <option value="America"></option>
+                    <option value="Africa"></option>
+                </datalist>
+
+        <!--
+        La ventaja de input list - datalist es que el usuario podría buscar una respuesta escribiendo en el input y seleccionando la opción.
+        -->
+
+        </main>
+            
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

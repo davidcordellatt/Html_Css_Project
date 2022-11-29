@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+<body>
+    <h2><a href="https://www.youtube.com/watch?v=h1mpculkegY">The Chainsmokers - Why can't you wait</a></h2>
+    
+    <main>
+        <section>
+        <!-- 
+        La etiqueta para trabajar videos es "video"
+
+        controls es utilizado para que junto con el video carguen los botones para controlarlo
+
+        preload es utilizado para que el video comience a cargarse apenas cargue la pagina HTML
+    
+        -->
+            <video 
+            controls
+            preload="auto"
+            >
+            <!-- source dentro de "video" es utilizado para indicar en qué formato vienen el archivo-->
+
+            <source src="./videoplayback.mp4#t=30,45"/>
+
+            <!-- el "#t=30,45" despues de .mp4 es un ejemplo de uso para decir en que segundo queremos que inicie y acabe la reproducción del video-->
+            
+            </video>
+        </section>
+    </main>
+</body>
+</html>
