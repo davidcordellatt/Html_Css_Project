@@ -1,0 +1,12 @@
+body {
+    font-size: 20px;
+}
+
+.block-element{
+    margin: 50px;
+    padding: 25px;
+    display: inline;
+    background-color: blueviolet;
+    max-width: 450px;
+    max-height: 75px;
+}

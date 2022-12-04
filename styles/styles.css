@@ -1,0 +1,30 @@
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color:pink;
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav__item {
+    display: inline-block;
+  }
+  .main-nav__item a {
+    color: rgb(168, 10, 44);
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration:none ;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .main-nav__item a:hover {
+    color: rgb(40, 238, 212);
+  }
+  .main-nav__item a:active {
+    color: rgb(31, 224, 31);
+  }
+  
+  .main-nav__item a::after {
+    content: " | ";
+  }
